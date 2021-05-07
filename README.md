@@ -19,7 +19,7 @@ Rails API-only app using rails 6.
 
 To get started with the app:
 
-* `git clone git@github.com:KavishreeC/Job-portal.git` to clone this repo
+* `git clone git@github.com:KavishreeC/api-app.git` to clone this repo
 
 * `bundle install` to install all required gems
 
