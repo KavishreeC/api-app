@@ -35,19 +35,17 @@ To get started with the app:
 
 #### create new user
 
-curl is used to post the credentials to `http://localhost:3000/authenticate`
-
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"email":"example@mail.com","password":"123123123"}' http://localhost:3000/authenticate
+curl -H "Content-Type: application/json" -X POST -d '{"email":"test1@mail.com","password":"123456789"}' http://localhost:3000/authenticate
 
 ```
 
 `{"auth_token": <token>}` will be returned.
 
-### Authenticate user
+#### Authenticate user
 
 ```
-curl -H "Authorization: `<token>`" http://localhost:3000/users
+curl -H "Authorization: <token>" http://localhost:3000/users
 
 ```
 
