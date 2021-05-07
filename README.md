@@ -31,9 +31,9 @@ To get started with the app:
 
 * `rails s` to start the rails server
 
-### Authentication
+## Authentication
 
-#### create new user
+### Create new user
 
 ```
 curl -H "Content-Type: application/json" -X POST -d '{"email":"test1@mail.com","password":"123456789"}' http://localhost:3000/authenticate
@@ -42,7 +42,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"email":"test1@mail.com","
 
 `{"auth_token": <token>}` will be returned.
 
-#### Authenticate user
+### Authenticate user
 
 ```
 curl -H "Authorization: <token>" http://localhost:3000/users
