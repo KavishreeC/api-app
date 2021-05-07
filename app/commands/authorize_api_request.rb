@@ -1,4 +1,3 @@
-
 class AuthorizeApiRequest
   prepend SimpleCommand
 

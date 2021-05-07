@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_04_08_080327) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "clients", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -28,13 +31,6 @@ ActiveRecord::Schema.define(version: 2021_04_08_080327) do
 
   create_table "homes", force: :cascade do |t|
     t.string "email_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "logins", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
