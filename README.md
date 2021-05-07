@@ -45,7 +45,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"email":"test1@mail.com","
 ### Authenticate user
 
 ```
-curl -H "Authorization: <token>" http://localhost:3000/users
+curl -H "Authorization: <token>" http://localhost:3000/api/v1/users
 
 ```
 
